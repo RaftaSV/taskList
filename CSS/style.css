@@ -26,13 +26,41 @@ body {
 
 
 .containerInput{
-    display: flex;
-    margin-top: 20px;
-    height: 100px;
-    align-items: center;
-    width: 98%;
-    gap:20px;
+   
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        height: 140px;
+        align-items: center;
+        gap: 10px;
+        width: 98%; 
+      }
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        height: 100px;
+        align-items: center;
+        width: 98%;
+        gap: 40px;
+      }
+      @media screen and (min-width: 1025px) {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        height: 100px;
+        align-items: center;
+        width: 98%;
+        gap: 40px;
+      }
   
+}
+.styledInputs{
+ display: flex;
+ flex-direction: row;
+ gap: 20px;
+ height: 60px;
 }
 .styleWrapper {
     display: flex;
@@ -40,6 +68,7 @@ body {
     align-items: center;
     width: max-content;
     height: 90px;
+
 }
 .title{
     margin-top: 0px;
@@ -50,6 +79,7 @@ body {
 }
 .input{
     display: flex;
+    width: 130px;
     height: 30px;
     border: 2px solid #444444;
     border-radius: 5px;
