@@ -1,4 +1,4 @@
-let taskArray = [{}];
+let taskArray = [];
 
 const addTask = () => {
     const task = document.getElementById('title').value;
